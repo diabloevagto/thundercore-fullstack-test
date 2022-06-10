@@ -1,0 +1,42 @@
+{
+  "name": "thundercore-fullstack-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "env-cmd -r .env-rc.js -e development react-scripts start",
+    "build:test": "env-cmd -r .env-rc.js -e test react-scripts build",
+    "build:production": "env-cmd -r .env-rc.js -e production react-scripts build"
+  },
+  "dependencies": {
+    "history": "^4.10.1",
+    "lodash-es": "^4.17.21",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.2",
+    "styled-components": "^5.2.1",
+    "styled-normalize": "^8.0.7"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
